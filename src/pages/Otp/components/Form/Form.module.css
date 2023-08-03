@@ -1,0 +1,59 @@
+.formContainer {
+  margin: 0 auto;
+  padding-left: 48px;
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  height: 363px;
+  box-shadow: 0px 4px 40px -12px rgba(59, 58, 59, 0.25);
+  border-radius: 12px;
+}
+
+.formTitle {
+  margin: 0;
+  padding-top: 56px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.password {
+  margin-top: 64px;
+  color: rgba(59, 58, 59, 0.60);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  border-bottom: 2px solid;
+  border-bottom-color: rgba(59, 58, 59, 0.60);
+  border-radius: 2px;
+  width: 100%;
+}
+
+.passwordCorrect {
+  color: #34C759;
+  border-bottom-color: #34C759;
+}
+
+.passwordUncorrect {
+  color: #FF3B30;
+  border-bottom-color: #FF3B30;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  max-width: 340px;
+  column-gap: 20px;
+}
+
+.formDescription {
+  margin-top: 16px;
+  color: rgba(59, 58, 59, 0.60);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

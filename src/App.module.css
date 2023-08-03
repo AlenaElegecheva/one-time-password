@@ -1,0 +1,15 @@
+.page {
+  box-sizing: border-box;
+  background-color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 1280px;
+  min-width: 300px;
+  margin: 0 auto;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  width: 100%;
+}

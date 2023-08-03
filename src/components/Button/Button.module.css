@@ -1,0 +1,28 @@
+.btnContainer {
+  margin: auto 0;
+  padding: 93px 0 0 0;
+}
+
+.btnImage {
+  width: 32px;
+  height: 32px;
+}
+
+.btnBackPrevPage {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .btnContainer {
+    padding: 65px 0 0 0;
+  }
+}
