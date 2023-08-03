@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Тестовое задание: Проверка одноразового пароля
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Оглавление
 
-## Available Scripts
+- [Обзор проекта](#обзор-проекта)
+  - [Задачи проекта](#задачи-проекта)
+  - [Функциональность проекта](#функциональность-проекта)
+  - [Screenshot](#screenshot)
+  - [Директории проекта](#директории-проекта)
+  - [Запуск проекта](#запуск-проекта)
+  - [Ссылки](#ссылки)
+- [Ход выполнения проекта](#ход-выполнения-проекта)
+  - [Используемые технологии](#используемые-технологии)
+  - [Чему я научилась, работая над проектом](#чему-я-научилась-работая-над-проектом)
+- [Автор](#автор)
 
-In the project directory, you can run:
+## Обзор проекта
 
-### `npm start`
+### Задачи проекта
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Создать сервис проверки одноразовых паролей (one time password - OTP).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Функциональность проекта
 
-### `npm test`
+Функционально проект представляет из себя SPA, позволяющее производить проверку одноразового пароля.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Функциональность:
 
-### `npm run build`
+- вводить можно только цифры, любые другие символы ввести нельзя;
+- работает функционал копировать-вставить;
+- фейковая проверка пароля, не нужно API;
+- после успешного ввода пароля и показа надписи “Redirecting to your account…” реализован переход на любую страницу (используя роутинг), но на нее нельзя перейти не введя успешный пароль;
+- на странице есть таймер (минута) после которого появляется кнопка “Request a new OTP” - ее нажатие приводит к перезапуску таймера.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Desktop screenshot](./src/images/screenshot1.png)
+![Desktop screenshot](./src/images/screenshot2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Директории проекта
 
-### `npm run eject`
+- `src/components` — директория с компонентами
+- `src/contexts` — директория с контекстами
+- `src/pages` — директория с корневыми файлами страниц
+- `src/utils` — директория со вспомогательными утилитами
+- `src/images` — директория с изображениями
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Запуск проекта
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm run build` — запуск проекта в режиме продакшн
+- `npm start` — запуск проекта в режиме разработки
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Ссылки
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Ссылка на репозиторий проекта](https://github.com/AlenaElegecheva/one-time-password)
+- [Ссылка на демо-страницу проекта](https://one-time-password-navy.vercel.app)
 
-## Learn More
+## Ход выполнения проекта
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Используемые технологии
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- HTML
+- CSS
+- JS
+- [React](https://react.dev/)
+- [React Router](https://reactrouter.com/en/main)
+- [CSS Modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/)
+- [ClassNames utility](https://github.com/JedWatson/classnames)
+- Адаптивная вёрстка
 
-### Code Splitting
+### Чему я научился работая над проектом
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Закрепила знания по React
 
-### Analyzing the Bundle Size
+## Автор
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Алена Елегечева**
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- e-mail: [alena.elegecheva@gmail.com](mailto:alena.elegecheva@gmail.com)
+- Telegram: [@ElegAN2006](https://t.me/ElegAN2006)
